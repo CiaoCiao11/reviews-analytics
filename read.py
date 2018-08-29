@@ -13,6 +13,7 @@ print('檔案讀完了，共有',len(data),'筆資料')
 average = total / len(data)
 print('平均資料長度',average)
 
+# 以下四行可寫成 new = [d for d in data if len(d) < 100]
 new=[]
 for d in data:
     if len(d) < 100:
